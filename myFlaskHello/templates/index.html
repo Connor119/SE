@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mypage</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div id="id01"></div>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    var url = "/station";
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            myFunction(myArr);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    function myFunction(arr) {
+        var out = arr[1];
+        document.getElementById("id01").innerHTML = out;
+    }
+
+
+</script>
+</body>
+</html>
+
+

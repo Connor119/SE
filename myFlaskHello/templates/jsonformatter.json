@@ -1,0 +1,774 @@
+{
+  "stations": [
+    {
+      "bike_stands": 30,
+      "lat": 53.3496,
+      "lng": -6.2782,
+      "name": "SMITHFIELD NORTH",
+      "number": 42
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3535,
+      "lng": -6.26531,
+      "name": "PARNELL SQUARE NORTH",
+      "number": 30
+    },
+    {
+      "bike_stands": 33,
+      "lat": 53.336,
+      "lng": -6.26298,
+      "name": "CLONMEL STREET",
+      "number": 54
+    },
+    {
+      "bike_stands": 35,
+      "lat": 53.3594,
+      "lng": -6.27614,
+      "name": "AVONDALE ROAD",
+      "number": 108
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.338,
+      "lng": -6.24153,
+      "name": "MOUNT STREET LOWER",
+      "number": 56
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3434,
+      "lng": -6.27012,
+      "name": "CHRISTCHURCH PLACE",
+      "number": 6
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3341,
+      "lng": -6.26544,
+      "name": "GRANTHAM STREET",
+      "number": 18
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3443,
+      "lng": -6.25043,
+      "name": "PEARSE STREET",
+      "number": 32
+    },
+    {
+      "bike_stands": 32,
+      "lat": 53.3388,
+      "lng": -6.262,
+      "name": "YORK STREET EAST",
+      "number": 52
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3478,
+      "lng": -6.24424,
+      "name": "EXCISE WALK",
+      "number": 48
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3361,
+      "lng": -6.25282,
+      "name": "FITZWILLIAM SQUARE WEST",
+      "number": 13
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3301,
+      "lng": -6.26804,
+      "name": "PORTOBELLO ROAD",
+      "number": 43
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3509,
+      "lng": -6.26512,
+      "name": "PARNELL STREET",
+      "number": 31
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3415,
+      "lng": -6.25685,
+      "name": "FREDERICK STREET SOUTH",
+      "number": 98
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3483,
+      "lng": -6.25466,
+      "name": "CUSTOM HOUSE",
+      "number": 23
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3589,
+      "lng": -6.28034,
+      "name": "RATHDOWN ROAD",
+      "number": 106
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3578,
+      "lng": -6.25156,
+      "name": "NORTH CIRCULAR ROAD (O'CONNELL'S)",
+      "number": 112
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3441,
+      "lng": -6.23715,
+      "name": "HANOVER QUAY",
+      "number": 68
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3439,
+      "lng": -6.28053,
+      "name": "OLIVER BOND STREET",
+      "number": 74
+    },
+    {
+      "bike_stands": 38,
+      "lat": 53.3475,
+      "lng": -6.28525,
+      "name": "COLLINS BARRACKS MUSEUM",
+      "number": 87
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.339,
+      "lng": -6.30022,
+      "name": "BROOKFIELD ROAD",
+      "number": 84
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3442,
+      "lng": -6.23345,
+      "name": "BENSON STREET",
+      "number": 90
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3343,
+      "lng": -6.2585,
+      "name": "EARLSFORT TERRACE",
+      "number": 11
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3408,
+      "lng": -6.26773,
+      "name": "GOLDEN LANE",
+      "number": 17
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3515,
+      "lng": -6.25527,
+      "name": "DEVERELL PLACE",
+      "number": 45
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3337,
+      "lng": -6.24834,
+      "name": "WILTON TERRACE (PARK)",
+      "number": 114
+    },
+    {
+      "bike_stands": 31,
+      "lat": 53.3431,
+      "lng": -6.27717,
+      "name": "JOHN STREET WEST",
+      "number": 72
+    },
+    {
+      "bike_stands": 35,
+      "lat": 53.3414,
+      "lng": -6.24672,
+      "name": "FENIAN STREET",
+      "number": 63
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3386,
+      "lng": -6.24861,
+      "name": "MERRION SQUARE SOUTH",
+      "number": 113
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3418,
+      "lng": -6.23129,
+      "name": "SOUTH DOCK ROAD",
+      "number": 91
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3466,
+      "lng": -6.24615,
+      "name": "CITY QUAY",
+      "number": 99
+    },
+    {
+      "bike_stands": 24,
+      "lat": 53.343,
+      "lng": -6.26358,
+      "name": "EXCHEQUER STREET",
+      "number": 9
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3469,
+      "lng": -6.23085,
+      "name": "THE POINT",
+      "number": 67
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3547,
+      "lng": -6.27231,
+      "name": "BROADSTONE",
+      "number": 116
+    },
+    {
+      "bike_stands": 36,
+      "lat": 53.334,
+      "lng": -6.26071,
+      "name": "HATCH STREET",
+      "number": 55
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.346,
+      "lng": -6.24358,
+      "name": "LIME STREET",
+      "number": 62
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3307,
+      "lng": -6.26018,
+      "name": "CHARLEMONT PLACE",
+      "number": 5
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3421,
+      "lng": -6.31002,
+      "name": "KILMAINHAM GAOL",
+      "number": 97
+    },
+    {
+      "bike_stands": 25,
+      "lat": 53.357,
+      "lng": -6.26323,
+      "name": "HARDWICKE PLACE",
+      "number": 61
+    },
+    {
+      "bike_stands": 29,
+      "lat": 53.3489,
+      "lng": -6.26746,
+      "name": "WOLFE TONE STREET",
+      "number": 77
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3421,
+      "lng": -6.27523,
+      "name": "FRANCIS STREET",
+      "number": 73
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3469,
+      "lng": -6.27298,
+      "name": "GREEK STREET",
+      "number": 4
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3479,
+      "lng": -6.24093,
+      "name": "GUILD STREET",
+      "number": 49
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3344,
+      "lng": -6.24557,
+      "name": "HERBERT PLACE",
+      "number": 19
+    },
+    {
+      "bike_stands": 29,
+      "lat": 53.3436,
+      "lng": -6.27507,
+      "name": "HIGH STREET",
+      "number": 7
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3596,
+      "lng": -6.26035,
+      "name": "NORTH CIRCULAR ROAD",
+      "number": 60
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3549,
+      "lng": -6.26942,
+      "name": "WESTERN WAY",
+      "number": 102
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.351,
+      "lng": -6.25294,
+      "name": "TALBOT STREET",
+      "number": 38
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3371,
+      "lng": -6.26059,
+      "name": "NEWMAN HOUSE",
+      "number": 53
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3392,
+      "lng": -6.24064,
+      "name": "SIR PATRICK DUN'S",
+      "number": 58
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3471,
+      "lng": -6.23475,
+      "name": "NEW CENTRAL BANK",
+      "number": 66
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3552,
+      "lng": -6.27842,
+      "name": "GRANGEGORMAN LOWER (CENTRAL)",
+      "number": 104
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3503,
+      "lng": -6.27351,
+      "name": "KING STREET NORTH",
+      "number": 101
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3548,
+      "lng": -6.24758,
+      "name": "KILLARNEY STREET",
+      "number": 115
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3357,
+      "lng": -6.24551,
+      "name": "HERBERT STREET",
+      "number": 47
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3437,
+      "lng": -6.23175,
+      "name": "HANOVER QUAY EAST",
+      "number": 117
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3479,
+      "lng": -6.24805,
+      "name": "CUSTOM HOUSE QUAY",
+      "number": 8
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3413,
+      "lng": -6.25812,
+      "name": "MOLESWORTH STREET",
+      "number": 27
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3475,
+      "lng": -6.25219,
+      "name": "GEORGES QUAY",
+      "number": 16
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3418,
+      "lng": -6.30509,
+      "name": "KILMAINHAM LANE",
+      "number": 96
+    },
+    {
+      "bike_stands": 22,
+      "lat": 53.3416,
+      "lng": -6.29719,
+      "name": "MOUNT BROWN",
+      "number": 82
+    },
+    {
+      "bike_stands": 38,
+      "lat": 53.3423,
+      "lng": -6.28766,
+      "name": "MARKET STREET SOUTH",
+      "number": 76
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3378,
+      "lng": -6.2677,
+      "name": "KEVIN STREET",
+      "number": 71
+    },
+    {
+      "bike_stands": 27,
+      "lat": 53.3581,
+      "lng": -6.2656,
+      "name": "ECCLES STREET EAST",
+      "number": 79
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3426,
+      "lng": -6.2387,
+      "name": "GRAND CANAL DOCK",
+      "number": 69
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3394,
+      "lng": -6.24655,
+      "name": "MERRION SQUARE EAST",
+      "number": 25
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3393,
+      "lng": -6.2647,
+      "name": "YORK STREET WEST",
+      "number": 51
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3375,
+      "lng": -6.26199,
+      "name": "ST. STEPHEN'S GREEN SOUTH",
+      "number": 37
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3556,
+      "lng": -6.2614,
+      "name": "DENMARK STREET GREAT",
+      "number": 59
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3439,
+      "lng": -6.29706,
+      "name": "ROYAL HOSPITAL",
+      "number": 95
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.347,
+      "lng": -6.2978,
+      "name": "HEUSTON STATION (CAR PARK)",
+      "number": 94
+    },
+    {
+      "bike_stands": 36,
+      "lat": 53.356,
+      "lng": -6.27838,
+      "name": "GRANGEGORMAN LOWER (NORTH)",
+      "number": 105
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3378,
+      "lng": -6.25603,
+      "name": "ST. STEPHEN'S GREEN EAST",
+      "number": 36
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3466,
+      "lng": -6.29692,
+      "name": "HEUSTON STATION (CENTRAL)",
+      "number": 93
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3459,
+      "lng": -6.25461,
+      "name": "TOWNSEND STREET",
+      "number": 22
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3502,
+      "lng": -6.2797,
+      "name": "GEORGES LANE",
+      "number": 50
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3563,
+      "lng": -6.27372,
+      "name": "PHIBSBOROUGH ROAD",
+      "number": 110
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3592,
+      "lng": -6.26978,
+      "name": "ECCLES STREET",
+      "number": 12
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3304,
+      "lng": -6.26516,
+      "name": "PORTOBELLO HARBOUR",
+      "number": 34
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.36,
+      "lng": -6.26483,
+      "name": "MATER HOSPITAL",
+      "number": 78
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3568,
+      "lng": -6.26814,
+      "name": "BLESSINGTON STREET",
+      "number": 2
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3435,
+      "lng": -6.28741,
+      "name": "JAMES STREET",
+      "number": 75
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3567,
+      "lng": -6.25636,
+      "name": "MOUNTJOY SQUARE EAST",
+      "number": 111
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3398,
+      "lng": -6.25199,
+      "name": "MERRION SQUARE WEST",
+      "number": 26
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3474,
+      "lng": -6.23852,
+      "name": "CONVENTION CENTRE",
+      "number": 65
+    },
+    {
+      "bike_stands": 16,
+      "lat": 53.3555,
+      "lng": -6.26442,
+      "name": "HARDWICKE STREET",
+      "number": 15
+    },
+    {
+      "bike_stands": 38,
+      "lat": 53.348,
+      "lng": -6.2918,
+      "name": "PARKGATE STREET",
+      "number": 86
+    },
+    {
+      "bike_stands": 16,
+      "lat": 53.344,
+      "lng": -6.2668,
+      "name": "DAME STREET",
+      "number": 10
+    },
+    {
+      "bike_stands": 25,
+      "lat": 53.3471,
+      "lng": -6.29204,
+      "name": "HEUSTON BRIDGE (SOUTH)",
+      "number": 100
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3521,
+      "lng": -6.26053,
+      "name": "CATHAL BRUGHA STREET",
+      "number": 24
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3452,
+      "lng": -6.24716,
+      "name": "SANDWITH STREET",
+      "number": 64
+    },
+    {
+      "bike_stands": 29,
+      "lat": 53.3533,
+      "lng": -6.24932,
+      "name": "BUCKINGHAM STREET LOWER",
+      "number": 109
+    },
+    {
+      "bike_stands": 35,
+      "lat": 53.3388,
+      "lng": -6.30395,
+      "name": "ROTHE ABBEY",
+      "number": 85
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3592,
+      "lng": -6.28187,
+      "name": "CHARLEVILLE ROAD",
+      "number": 107
+    },
+    {
+      "bike_stands": 23,
+      "lat": 53.349,
+      "lng": -6.26031,
+      "name": "PRINCES STREET / O'CONNELL STREET",
+      "number": 33
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3584,
+      "lng": -6.26064,
+      "name": "UPPER SHERRARD STREET",
+      "number": 44
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3352,
+      "lng": -6.2509,
+      "name": "FITZWILLIAM SQUARE EAST",
+      "number": 89
+    },
+    {
+      "bike_stands": 23,
+      "lat": 53.3396,
+      "lng": -6.24378,
+      "name": "GRATTAN STREET",
+      "number": 57
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3414,
+      "lng": -6.29295,
+      "name": "ST JAMES HOSPITAL (LUAS)",
+      "number": 80
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3328,
+      "lng": -6.25794,
+      "name": "HARCOURT TERRACE",
+      "number": 41
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3512,
+      "lng": -6.26986,
+      "name": "BOLTON STREET",
+      "number": 3
+    },
+    {
+      "bike_stands": 21,
+      "lat": 53.3483,
+      "lng": -6.26665,
+      "name": "JERVIS STREET",
+      "number": 40
+    },
+    {
+      "bike_stands": 29,
+      "lat": 53.3461,
+      "lng": -6.268,
+      "name": "ORMOND QUAY UPPER",
+      "number": 29
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3547,
+      "lng": -6.27868,
+      "name": "GRANGEGORMAN LOWER (SOUTH)",
+      "number": 103
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3563,
+      "lng": -6.25859,
+      "name": "MOUNTJOY SQUARE WEST",
+      "number": 28
+    },
+    {
+      "bike_stands": 20,
+      "lat": 53.3324,
+      "lng": -6.25272,
+      "name": "WILTON TERRACE",
+      "number": 39
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3407,
+      "lng": -6.30819,
+      "name": "EMMET ROAD",
+      "number": 83
+    },
+    {
+      "bike_stands": 40,
+      "lat": 53.3478,
+      "lng": -6.29243,
+      "name": "HEUSTON BRIDGE (NORTH)",
+      "number": 92
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3422,
+      "lng": -6.25449,
+      "name": "LEINSTER STREET SOUTH",
+      "number": 21
+    },
+    {
+      "bike_stands": 30,
+      "lat": 53.3488,
+      "lng": -6.28164,
+      "name": "BLACKHALL PLACE",
+      "number": 88
+    }
+  ]
+}
