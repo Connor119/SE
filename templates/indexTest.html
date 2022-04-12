@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dublin Bikes</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body id="page1">
+        <div class = "main">
+
+            <!-- header -->
+
+            <header>
+                <a href="#logo">
+                    <img src="../static/image/logo_transparent1.png" alt="" style="width:250px;height:100px;"></a>
+                <div class="department">
+                    353-2022888 UCD, Belfield, Dublin 4<br>
+                    <span>Freephone: &nbsp; +353-2022888</span>
+                </div>
+            </header>
+
+            <!-- Body part -->
+
+            <div class="box"><div class="ic">More Website Templates</div>
+
+            <!-- The navigation bar -->
+                <nav>
+                    <ul id="menu">
+                        <li class="active"><a href="indexTest.html">Home</a></li>
+                        <li><a href="/Register">Register</a></li>
+                    </ul>
+                </nav>
+
+                <!-- map & information part -->
+                <article id="content">
+                    <div class="box1">
+
+                       <!-- map -->
+
+                        <div id="map"></div>
+
+                        <!-- station information -->
+
+                        <div class="info">
+                            <!-- Date of today -->
+                            <form action="#" id="form2">
+                                <div class="row" id="date">
+                                    Date:
+                                </div>
+                            </form>
+                            <!-- Today's weather -->
+                            <form action="#" id="form3">
+                                <div class="row" id="weather">
+                                    Weather:
+                                </div>
+                            </form>
+
+                            <!-- Station details -->
+                            <form action="#" id="form1">
+                                <fieldset>
+                                    <legend>Station Details: </legend>
+                                    <div class="row" id="Sname">
+                                        Station name:
+                                    </div>
+                                    <div class="row" id="Snum">
+                                        Station number:
+                                    </div>
+                                    <div class="row" id="aStands">
+                                        Available Stands:
+                                    </div>
+                                    <div class="row" id="aBike">
+                                        Available bike:
+                                    </div>
+                                    <!-- select forcast time -->
+                                    <select id="data">
+                                        <option value="#">-- Select forecast information --</option>
+                                        <option value="1">After 1 Hour</option>
+                                        <option value="2">After 2 Hours</option>
+                                        <option value="3">After 3 Hours</option>
+                                        <option value="4">After 4 Hours</option>
+                                    </select>
+
+                                    <table class="table1">
+                                        <tr>
+                                            <th>Weather</th>
+                                            <th>Temp</th>
+                                            <th>Wind</th>
+                                            <th>Predict_bike</th>
+                                        </tr>
+                                    </table>
+                                    <!-- forcast table -->
+                                    <table class="table2">
+                                        <tr class="hideShowTr" id="1" style="display: none;">
+                                            <td id="weatherName1"></td>
+                                            <td id="temp1"></td>
+                                            <td id="wind1"></td>
+                                            <td id="num1"></td>
+                                        </tr>
+
+                                        <tr class="hideShowTr" id="2" style="display: none;">
+                                            <td id="weatherName2"></td>
+                                            <td id="temp2"></td>
+                                            <td id="wind2"></td>
+                                            <td id="num2"></td>
+                                        </tr>
+
+                                        <tr class="hideShowTr" id="3" style="display: none;">
+                                            <td id="weatherName3"></td>
+                                            <td id="temp3"></td>
+                                            <td id="wind3"></td>
+                                            <td id="num3"></td>
+                                        </tr>
+
+                                        <tr class="hideShowTr" id="4" style="display: none;">
+                                            <td id="weatherName4"></td>
+                                            <td id="temp4"></td>
+                                            <td id="wind4"></td>
+                                            <td id="num4"></td>
+                                        </tr>
+                                    </table>
+                                    <div class="doubleclick">
+                                        <p>* Please double-click the marker to show the bar chart!</p>
+                                    </div>
+
+
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="chart_div" style="width:100%"></div>
+
+        <div class="main">
+
+            <!-- footer -->
+            <footer>
+
+                <div class = "footer_menu">
+                    <div class ="media">
+                        <div class="coins">
+                            <ul>
+                                <li><a class="facebook" href="#"><span>FaceBook</span></a></li>
+                                <li><a class="twitter" href="#"><span>Twitter</span></a></li>
+                                <li><a class="flickr" href="#"><span>Flickr</span></a></li>
+                                <li><a class="googleplus" href="#"><span>Google+</span></a></li>
+                                <li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+                            </ul>
+                        </div>
+                        <p>DublinBike &copy; 2022.SE.Project / https://www.ucd.ie</p>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+        <script>
+            window.onload = function(){
+                getTime();
+                getWeatherAndData();
+                var xmlhttp = new XMLHttpRequest();
+                var url = "stationTest";
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var myArr = JSON.parse(this.responseText);
+                        var centerLat=myArr.stations[10].lat;
+                        var centerLng=myArr.stations[10].lng;
+                        initMap(myArr,centerLat,centerLng);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function getWeatherAndData() {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "allInfo";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var jsonForPosition = JSON.parse(xmlhttp.responseText);
+                        showStaticInfo(jsonForPosition);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+            function getTime() {
+                $.ajax({
+                    url:"/time",
+                    timeout:100000,
+                    success:function (data) {
+                        $("#date").html(data)
+                    }
+                });
+            }
+
+
+            function showStaticInfo(json){
+                let out = json.stations[0].weather;
+                document.getElementById("weather").innerHTML = "Weather: "+out;
+
+            }
+
+
+            
+            function test(num) {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "test";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var json1 = JSON.parse(xmlhttp.responseText);
+                        test2(json1,num);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function test2(json,num){
+                // console.log("num is:"+num)
+                for (let i = 0; i < json.stations.length; i++) {
+                    // console.log(json.stations[i].pd_abs)
+                    if(json.stations[i].number==num){
+                        document.getElementById("num1").innerHTML = json.stations[i].pd_abs;
+                        document.getElementById("weatherName1").innerHTML = json.stations[i].weather;
+                        document.getElementById("wind1").innerHTML = json.stations[i].wind_speed;
+                        document.getElementById("temp1").innerHTML = (json.stations[i].temp - 273.15).toFixed(2) +"℃" ;
+                        break;
+                    }
+                }
+                // document.getElementById("testPrint").innerHTML = "pridict: "+out;
+            }
+
+
+
+            function pri2(num) {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "pri2";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var json2 = JSON.parse(xmlhttp.responseText);
+                        priShow2(json2,num);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function priShow2(json,num){
+                // console.log("num is:"+num)
+                for (let i = 0; i < json.stations.length; i++) {
+                    // console.log(json.stations[i].pd_abs)
+                    if(json.stations[i].number==num){
+                        document.getElementById("num2").innerHTML = json.stations[i].pd_abs;
+                        document.getElementById("weatherName2").innerHTML = json.stations[i].weather;
+                        document.getElementById("wind2").innerHTML = json.stations[i].wind_speed;
+                        document.getElementById("temp2").innerHTML = (json.stations[i].temp - 273.15).toFixed(2) +"℃" ;
+                        break;
+                    }
+                }
+                // document.getElementById("testPrint").innerHTML = "pridict: "+out;
+            }
+
+
+
+            function pri3(num) {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "pri3";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var json3 = JSON.parse(xmlhttp.responseText);
+                        priShow3(json3,num);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function priShow3(json,num){
+                // console.log("num is:"+num)
+                for (let i = 0; i < json.stations.length; i++) {
+                    // console.log(json.stations[i].pd_abs)
+                    if(json.stations[i].number==num){
+                        document.getElementById("num3").innerHTML = json.stations[i].pd_abs;
+                        document.getElementById("weatherName3").innerHTML = json.stations[i].weather;
+                        document.getElementById("wind3").innerHTML = json.stations[i].wind_speed;
+                        document.getElementById("temp3").innerHTML = (json.stations[i].temp - 273.15).toFixed(2) +"℃" ;
+                        break;
+                    }
+                }
+                // document.getElementById("testPrint").innerHTML = "pridict: "+out;
+            }
+
+            function pri4(num) {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "pri4";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var json4 = JSON.parse(xmlhttp.responseText);
+                        priShow4(json4,num);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function priShow4(json,num){
+                // console.log("num is:"+num)
+                for (let i = 0; i < json.stations.length; i++) {
+                    // console.log(json.stations[i].pd_abs)
+                    if(json.stations[i].number==num){
+                        document.getElementById("num4").innerHTML = json.stations[i].pd_abs;
+                        document.getElementById("weatherName4").innerHTML = json.stations[i].weather;
+                        document.getElementById("wind4").innerHTML = json.stations[i].wind_speed;
+                        document.getElementById("temp4").innerHTML = (json.stations[i].temp - 273.15).toFixed(2) +"℃" ;
+                        break;
+                    }
+                }
+                // document.getElementById("testPrint").innerHTML = "pridict: "+out;
+            }
+
+            $('#data').change(function(){
+                $('.hideShowTr').css('display','none');
+                $('tr#' + $(this).val()).css('display','block');
+            })
+
+            function pri5(num) {
+                var xmlhttp = new XMLHttpRequest();
+                var url = "pri5";
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var json5 = JSON.parse(xmlhttp.responseText);
+                        priShow5(json5,num);
+                    }
+                };
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+            }
+
+            function priShow5(json,num){
+                var nums = [1,2,3,4]
+                var res =[]
+                // console.log("num is:"+num)
+                var index = 0;
+                for (let i = 0; i < json.stations.length; i++) {
+                    // console.log(json.stations[i].pd_abs)
+                    if(json.stations[i].number==num){
+                        nums[index]=json.stations[i].pd_abs;
+                        index++;
+                        // break;
+                    }
+                }
+                for (let i = 0; i < 4; i++) {
+                    res[i]=nums[i];
+                }
+
+                google.charts.load('current', {'packages':['corechart','table']});
+                google.charts.setOnLoadCallback(drawChart(nums,num));
+
+                // document.getElementById("chart").innerHTML = "pridict2num: "+json.stations[i].pd_abs;
+            }
+
+            function drawChart(nums,num) {
+                console.log(nums);
+                var dt = new google.visualization.DataTable();
+                dt.addColumn('string', 'hour');
+                dt.addColumn('number', 'number of bick');
+                dt.addRows([
+                  ['after 1 hour', nums[0]],
+                  ['after 2 hour', nums[1]],
+                  ['after 3 hour', nums[2]],
+                  ['after 4 hour', nums[3]],
+                ]);
+
+                // Set chart options
+                var options = {'title':'station'+num+': '+'Number of bicycles in the next four hours',
+                               'width':1424,
+                               'height':300};
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+                chart.draw(dt, options);
+
+              }
+            
+
+
+        </script>
+        <script>
+            var map;
+            // add google map 
+            function initMap(bickInfo,searchLat,searchLng) {
+                var bickinfo = bickInfo;
+                
+              const uluru = { lat: searchLat, lng: searchLng };
+              
+              var options = {
+                  zoom: 16,
+                  center: uluru,
+              }
+              const maptest = new google.maps.Map(document.getElementById("map"), options);
+
+              for (let i = 0; i < bickinfo.stations.length; i++) {
+                    addMarker({
+                        coords: { lat: bickinfo.stations[i].lat, lng: bickinfo.stations[i].lng },
+                        content: bickinfo.stations[i].name,
+                        contentNumber :bickinfo.stations[i].number,
+                        available_bike_stands : bickinfo.stations[i].available_bike_stands,
+                        available_bikes: bickinfo.stations[i].available_bikes
+                    });
+              }
+
+              //add marker
+                function addMarker(props){
+                    var marker = new google.maps.Marker({
+                        position: props.coords,
+                        map: maptest,
+                      });
+                    if(props.content){
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: '<div>'+
+                                        '<div>'+props.content+'</div>'+
+                                        '<div>'+props.contentNumber+'</div>'+
+                                    '</div>'
+                        });
+                        marker.addListener('click',function(){
+                            infoWindow.open(map,marker);
+                            document.getElementById("Sname").innerHTML = "Station name: "+props.content;
+                            document.getElementById("Snum").innerHTML = "Station number: "+props.contentNumber;
+                            document.getElementById("aStands").innerHTML = "Available bike stands: "+props.available_bike_stands;
+                            document.getElementById("aBike").innerHTML = "Available bikes: "+props.available_bikes;
+                            test(props.contentNumber);
+                            pri2(props.contentNumber);
+                            pri3(props.contentNumber);
+                            pri4(props.contentNumber);
+                            
+                        });
+                        marker.addListener('dblclick',function(){
+                            pri5(props.contentNumber);
+                            pri5(props.contentNumber);
+                            
+                        });
+                    }
+                }
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgOkQalKrSnNl6j7mYs8SrvqaL2PuEC2c"
+        async defer></script>
+    </body>
+</html>
