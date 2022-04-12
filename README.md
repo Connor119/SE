@@ -44,6 +44,6 @@ And the web final design are as follows.
 ![alt text](https://github.com/Connor119/SE/blob/788d066888cfd96227d868a2a40860cf3ded365b/final_web.png)
 
 ## Division
-* Qiyan Xuan 20211258 -- Front End
-* Boshen Fan 20211152 -- Back End,Google map API,G
-* Miao Shi 20211104 -- Data Analyse, Data Scrap, Deploy scrap and update files and project on EC2 instance. 
+* Qiyan Xuan (33%) 20211258 -- Front End, UI design, Documents and Java Script.
+* Boshen Fan (33%) 20211152 -- Back End,Google map API,Google chart API.
+* Miao Shi (34%) 20211104 -- Data Analyse, Data Scrap, Deploy scrap and update files and project on EC2 instance. 
