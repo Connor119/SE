@@ -45,5 +45,5 @@ And the web final design are as follows.
 
 ## Division
 * Qiyan Xuan 20211258 -- Front End
-* Boshen Fan 20211152 -- Back End
-* Miao Shi 20211104 -- Data Analyse
+* Boshen Fan 20211152 -- Back End,Google map API,G
+* Miao Shi 20211104 -- Data Analyse, Data Scrap, Deploy scrap and update files and project on EC2 instance. 
